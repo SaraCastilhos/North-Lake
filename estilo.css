@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PLANO DE FUNDO */
+.fundo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* HEADER */
+
+/* LOGO */
+.logo {
+    font-size: 2.5vmin;
+    font-weight: bold;
+    top: 3vmin;
+    left: 3vmin;
+    position: fixed;
+    z-index: 10;
+    color: white;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    width: 100%;
+    padding: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    font-size: 2.2vmin;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vmin;
+    margin-top: 2vmin;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover{
+    text-decoration: underline;
+    color: white;
+}
+/* Setinha */
+.tem-menu::after {
+    content: " ▼";
+    font-size: 1.5vmin;
+    color: white;
+}
+
+/* Submenu */
+
+/*Esconde*/
+.menu-suspenso {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1vmin;
+    border-radius: 0.5vmin;
+    margin-top: 0.2vmin;
+    z-index: 5;
+}
+
+.menu-suspenso > li {
+    padding: 1vmin;
+    white-space: nowrap;
+}
+
+/*Faz aparecer*/
+.tem-menu:hover .menu-suspenso {
+    display: block;
+}
+
+/* REDES SOCIAIS */
+.icones-sociais {
+    font-size: 2.2vmin;
+    top: 3vmin;
+    right: 3vmin;
+    position: fixed;
+    display: flex;
+    gap: 2vmin;
+    z-index: 10;
+}
+
+.icones-sociais a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.2vmin;
+    padding-inline: 1.8vmin;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.icones-sociais a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* CONTEÚDO CENTRAL */
+.central {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 25vh;
+}
+
+main h2 {
+    font-size: 4vmin;
+    margin-bottom: 0.6vmin;
+}
+
+main h1 {
+    font-size: 15vmin;
+    font-style: italic;
+    line-height: 1;
+}
+
+/* BOTÃO */
+button {
+    font-size: 2vmin;
+    color: #333;
+    margin-top: 2vmin;
+    padding: 1vmin 4vmin;
+    border: none;
+    border-radius: 2vmin;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.central button:hover {
+    background: #ddd;
+}
